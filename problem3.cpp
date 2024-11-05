@@ -14,8 +14,11 @@ int main() {
     }
     for(int k=0;k<t;k++) {
         for(int l=0;l<t;l++) {
-            if(a[l]!=a[k]) {
+            if(a[l]!=a[k] && a[l]!=0 && a[k]!=0) {
                 result=a[k];
+            }
+            else if(a[l]!=a[k] && a[l]==0 || a[k]==0) {
+                result=0;
             }
         }
 
